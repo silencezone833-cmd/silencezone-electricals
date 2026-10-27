@@ -1,1 +1,108 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Silencezone Electricals provides reliable electrical installation, house wiring, maintenance and transformer installation services.">
+  <title>Silencezone Electricals | Reliable Electrical Services</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; background: #f5f7fa; color: #172033; line-height: 1.6; }
+    header { background: #071525; color: white; padding: 18px 6%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .logo { font-size: 20px; font-weight: bold; color: #ffc928; }
+    nav a { color: white; text-decoration: none; margin-left: 14px; font-size: 14px; }
+    .hero { background: linear-gradient(135deg, #071525, #123c60); color: white; padding: 85px 7%; text-align: center; }
+    .hero h1 { font-size: clamp(32px, 7vw, 52px); line-height: 1.15; margin-bottom: 20px; }
+    .hero h1 span { color: #ffc928; }
+    .hero p { max-width: 650px; margin: 0 auto 28px; color: #e0e8f1; }
+    .btn { display: inline-block; background: #ffc928; color: #071525; padding: 13px 22px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 5px; }
+    .btn-outline { border: 1px solid white; color: white; background: transparent; }
+    section { padding: 60px 7%; }
+    .section-title { text-align: center; font-size: 30px; margin-bottom: 12px; }
+    .intro { text-align: center; max-width: 680px; margin: 0 auto 32px; color: #596579; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+    .service { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 18px #0b203010; border-bottom: 3px solid #ffc928; }
+    .service .symbol { font-size: 30px; }
+    .service h3 { margin: 10px 0; }
+    .about { background: white; }
+    .about-inner { max-width: 800px; margin: auto; text-align: center; }
+    .contact { background: #071525; color: white; text-align: center; }
+    .contact p { margin: 12px 0 22px; color: #d7e0ea; }
+    footer { background: #030b14; color: #cbd5e1; padding: 22px; text-align: center; font-size: 13px; }
+    @media (max-width: 500px) { header { justify-content: center; } nav a { margin: 0 6px; } .hero { padding: 65px 6%; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SILENCEZONE ELECTRICALS</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Powering Your World.<br><span>Safely and Reliably.</span></h1>
+      <p>Professional electrical installation and maintenance for residential, commercial and industrial projects. Quality workmanship. Safety first. No shortcuts.</p>
+      <a class="btn" href="#contact">Request a Quote</a>
+      <a class="btn btn-outline" href="#services">Our Services</a>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">Our Services</h2>
+      <p class="intro">Dependable electrical solutions tailored to your project and your needs.</p>
+      <div class="services">
+        <article class="service">
+          <div class="symbol">🏠</div>
+          <h3>House Wiring</h3>
+          <p>Electrical wiring and installation for new buildings, homes and renovations.</p>
+        </article>
+        <article class="service">
+          <div class="symbol">💡</div>
+          <h3>Electrical Installation</h3>
+          <p>Installation of lights, sockets, fittings, distribution boards and other electrical systems.</p>
+        </article>
+        <article class="service">
+          <div class="symbol">🔧</div>
+          <h3>Maintenance & Repairs</h3>
+          <p>Electrical fault finding, troubleshooting, repairs and maintenance.</p>
+        </article>
+        <article class="service">
+          <div class="symbol">⚡</div>
+          <h3>Power Infrastructure</h3>
+          <p>Road pole wiring and transformer installation for suitable projects.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-inner">
+        <h2 class="section-title">Why Choose Silencezone?</h2>
+        <p>We believe every project deserves careful planning, quality workmanship and attention to safety. Our goal is to provide dependable electrical solutions and professional service from assessment to completion.</p>
+        <p style="margin-top:18px;font-weight:bold;">Residential. Commercial. Industrial. No shortcuts. No guesswork.</p>
+        <p>Safety is not an option — it's a rule.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Let's Discuss Your Project</h2>
+      <p>Need electrical installation, maintenance or a project assessment? Contact us to discuss your requirements and request a quote.</p>
+      <a class="btn" href="https://wa.me/" target="_blank" rel="noopener">Contact Us on WhatsApp</a>
+      <p style="font-size:13px;margin-top:15px;">Our contact details will be added here.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Silencezone Electricals. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+  </html>
+    
