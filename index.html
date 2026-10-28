@@ -57,7 +57,7 @@
     <section class="hero" id="home">
       <h1>Powering Your World.<br><span>Safely and Reliably.</span></h1>
       <p>Professional electrical installation and maintenance for residential, commercial and industrial projects. Quality workmanship. Safety first. No shortcuts.</p>
-      <a class="btn" href="#contact">Request a Quote</a>
+<a class="btn" href="#quote-form">Request a Quote</a>
       <a class="btn btn-outline" href="#services">Our Services</a>
     </section>
 
@@ -130,6 +130,40 @@
       </div>
     </section>
 
+<section id="quote-form" style="padding:40px 7%; background:#f5f7fa; color:#071525;">
+  <h2 style="text-align:center;">Request a Quote</h2>
+  <p style="text-align:center;">Tell us about your electrical project.</p>
+
+  <form onsubmit="event.preventDefault(); var f=this; var m='NEW QUOTE REQUEST - SILENCEZONE ELECTRICALS\nName: '+f.name.value+'\nPhone: '+f.phone.value+'\nJob: '+f.job.value+'\nLocation: '+f.location.value+'\nDetails: '+f.details.value; window.open('https://wa.me/2349160768375?text='+encodeURIComponent(m),'_blank');">
+
+    <label>Full name</label><br>
+    <input name="name" required placeholder="Enter your name" style="width:100%;padding:12px;margin:8px 0 16px;box-sizing:border-box;">
+
+    <label>Phone number</label><br>
+    <input name="phone" type="tel" required placeholder="Your phone number" style="width:100%;padding:12px;margin:8px 0 16px;box-sizing:border-box;">
+
+    <label>Type of electrical job</label><br>
+    <select name="job" required style="width:100%;padding:12px;margin:8px 0 16px;box-sizing:border-box;">
+      <option value="">Choose a service</option>
+      <option>House wiring</option>
+      <option>Electrical installation</option>
+      <option>Lighting installation</option>
+      <option>Conduit piping</option>
+      <option>Transformer installation</option>
+      <option>Road/pole wiring</option>
+      <option>Other electrical work</option>
+    </select><br>
+
+    <label>Project location</label><br>
+    <input name="location" required placeholder="Town or area" style="width:100%;padding:12px;margin:8px 0 16px;box-sizing:border-box;">
+
+    <label>Additional details (optional)</label><br>
+    <textarea name="details" rows="4" placeholder="Describe the work you need" style="width:100%;padding:12px;margin:8px 0 16px;box-sizing:border-box;"></textarea><br>
+
+    <button type="submit" style="background:#ffc928;color:#071525;padding:14px 24px;border:0;border-radius:8px;font-weight:bold;width:100%;">SEND QUOTE REQUEST VIA WHATSAPP</button>
+  </form>
+</section>
+    
     <section id="contact" class="contact">
       <h2 class="section-title">Let's Discuss Your Project</h2>
       <p>Need electrical installation, maintenance or a project assessment? Contact us to discuss your requirements and request a quote.</p>
