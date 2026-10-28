@@ -88,10 +88,10 @@
       </div>
     </section>
 <div style="text-align:center; padding:25px 0;">
-  <a href="#projects" style="display:inline-block; background:#ffc928; color:#071525; padding:14px 28px; border-radius:8px; text-decoration:none; font-weight:bold;">
+  <button onclick="var p=document.getElementById('projects'); p.hidden=!p.hidden; this.textContent=p.hidden?'OUR PROJECTS →':'HIDE PROJECTS ↑';" style="background:#ffc928; color:#071525; padding:14px 28px; border:0; border-radius:8px; font-weight:bold; cursor:pointer;">
     OUR PROJECTS →
-  </a>
-</div><section id="projects">
+  </button>
+</div><section id="projects" hidden>
   <h2 class="section-title">Our Projects</h2>
   <p class="intro">A look at our electrical work, from building construction to interior lighting.</p>
 
